@@ -8,6 +8,24 @@
 
 Fixtures for testing Haraka and plugins
 
+# Usage
+
+var fixtures = require('haraka-test-fixtures');
+
+# Exports the following fixture types:
+
+* connection
+* line_socket
+* logger
+* plugin
+* result_store
+* stub
+* transaction
+* util_hmailitem
+
+These fixtures are rough analogs of their like-named siblings in Haraka/* with
+varying levels of completeness. If there are functions necessary to enhance
+your ability to test, please do add them here.
 
 
 [ci-img]: https://travis-ci.org/haraka/haraka-test-fixtures.svg
