@@ -14,44 +14,7 @@
     "node": ">= 0.10.42"
   },
   "dependencies": {
-    "haraka-constants": "^1.0.0"
-  },
-  "eslintConfig": {
-    "env": {
-      "node": true
-    },
-    "rules": {
-      "camelcase": [
-        0,
-        {
-          "properties": "never"
-        }
-      ],
-      "dot-notation": 2,
-      "indent": [
-        2,
-        4,
-        {
-          "SwitchCase": 1
-        }
-      ],
-      "one-var": [
-        2,
-        "never"
-      ],
-      "no-trailing-spaces": [
-        2,
-        {
-          "skipBlankLines": false
-        }
-      ],
-      "keyword-spacing": [
-        2,
-        {
-          "overrides": {}
-        }
-      ]
-    }
+    "haraka-constants": "*"
   },
   "optionalDependencies": {},
   "devDependencies": {
