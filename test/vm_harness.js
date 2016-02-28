@@ -9,4 +9,14 @@ exports.sandbox_require = {
         test.equal(typeof vm.sandbox_require, 'function');
         test.done();
     },
+    'can load a ./ relative path': function (test) {
+        test.expect(1);
+        test.ok(vm.sandbox_require('./logger'));
+        test.done();
+    },
+    'can load a ../ relative path': function (test) {
+        test.expect(1);
+        test.ok(vm.sandbox_require('../index'));
+        test.done();
+    }
 }
