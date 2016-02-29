@@ -1,0 +1,11 @@
+{
+  "name": "mock-plugin-dir",
+  "version": "1.0.0",
+  "description": "Mock Plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matt Simerson",
+  "license": "MIT"
+}

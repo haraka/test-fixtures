@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "address-rfc2821": "*",
+    "haraka-config": "^1.0.2",
     "haraka-constants": "*"
   },
   "optionalDependencies": {},
