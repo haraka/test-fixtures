@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "homepage": "http://haraka.github.io",
   "repository": {
     "type": "git",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "address-rfc2821": "*",
-    "haraka-config": "^1.0.2",
+    "haraka-config": "*",
     "haraka-constants": "*"
   },
   "optionalDependencies": {},
