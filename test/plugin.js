@@ -54,4 +54,12 @@ exports.inherits = {
         test.ok(Object.keys(pi.base));
         test.done();
     },
+    'plugin name remains the same after a plugin inerits': function (test) {
+        test.expect(2);
+        var pi = new Plugin('test/fixtures/mock-plugin');
+        test.equal(typeof pi.register, 'function');
+        pi.register();
+        test.equal(pi.name, 'test/fixtures/mock-plugin');
+        test.done();
+    },
 }
