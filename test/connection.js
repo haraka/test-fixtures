@@ -16,10 +16,28 @@ exports.connection = {
         test.ok(newCon);
         test.done();
     },
-    'remote_ip': function (test) {
+    'remote.ip': function (test) {
         test.expect(1);
         var newCon = connection.createConnection();
-        test.equal(newCon.remote_ip, '127.0.0.1');
+        test.equal(newCon.remote.ip, '127.0.0.1');
+        test.done();
+    },
+    'local': function (test) {
+        test.expect(1);
+        var newCon = connection.createConnection();
+        test.deepEqual(newCon.local, {});
+        test.done();
+    },
+    'hello': function (test) {
+        test.expect(1);
+        var newCon = connection.createConnection();
+        test.deepEqual(newCon.hello, {});
+        test.done();
+    },
+    'tls': function (test) {
+        test.expect(1);
+        var newCon = connection.createConnection();
+        test.deepEqual(newCon.tls, {});
         test.done();
     }
 }
