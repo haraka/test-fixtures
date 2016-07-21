@@ -1,4 +1,8 @@
 
+# 1.0.7 - Jul 20, 2016
+
+    * normalized connection properties (haraka/Haraka#1098)
+
 # 1.0.6 - Mar 26, 2016
 
     * more reliable package.json detection
