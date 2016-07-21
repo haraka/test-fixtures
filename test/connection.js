@@ -19,7 +19,7 @@ exports.connection = {
     'remote_ip': function (test) {
         test.expect(1);
         var newCon = connection.createConnection();
-        test.equal(newCon.remote_ip, '127.0.0.1');
+        test.equal(newCon.remote.ip, '127.0.0.1');
         test.done();
     }
 }
