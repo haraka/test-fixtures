@@ -39,5 +39,18 @@ exports.connection = {
         var newCon = connection.createConnection();
         test.deepEqual(newCon.tls, {});
         test.done();
+    },
+    'notes': function (test) {
+        test.expect(1);
+        var newCon = connection.createConnection();
+        test.deepEqual(newCon.notes, {});
+        test.done();
+    },
+    'set': function (test) {
+        test.expect(1);
+        var newCon = connection.createConnection();
+        newCon.set('remote', 'ip', '192.168.1.1');
+        test.deepEqual(newCon.remote.ip, '192.168.1.1');
+        test.done();
     }
 }
