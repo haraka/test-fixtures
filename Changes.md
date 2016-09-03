@@ -1,4 +1,8 @@
 
+# 1.0.8 - Sep 02, 2016
+
+    * add connection.set()
+
 # 1.0.7 - Jul 20, 2016
 
     * normalized connection properties (haraka/Haraka#1098)
