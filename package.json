@@ -30,6 +30,8 @@
     "url": "https://github.com/haraka/haraka-test-fixtures/issues"
   },
   "scripts": {
-    "test": "./run_tests"
+    "test": "./run_tests",
+    "lint": "./node_modules/.bin/grunt lint",
+    "coverage": "./node_modules/.bin/istanbul cover run_tests"
   }
 }
