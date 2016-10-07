@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "homepage": "http://haraka.github.io",
   "repository": {
     "type": "git",
@@ -20,7 +20,7 @@
   },
   "optionalDependencies": {},
   "devDependencies": {
-    "eslint": ">=2.0.0",
+    "eslint": "*",
     "grunt": "*",
     "grunt-eslint": "*",
     "nodeunit": "*"
