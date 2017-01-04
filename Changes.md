@@ -1,4 +1,9 @@
 
+# 1.0.11 - Jan 01, 2017
+
+    * lint fixes
+    * packaging updates
+
 # 1.0.8 - Sep 02, 2016
 
     * add connection.set()
