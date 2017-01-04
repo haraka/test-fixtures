@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "homepage": "http://haraka.github.io",
   "repository": {
     "type": "git",
@@ -21,8 +21,6 @@
   "optionalDependencies": {},
   "devDependencies": {
     "eslint": "*",
-    "grunt": "*",
-    "grunt-eslint": "*",
     "nodeunit": "*"
   },
   "bugs": {
@@ -31,7 +29,7 @@
   },
   "scripts": {
     "test": "./run_tests",
-    "lint": "./node_modules/.bin/grunt lint",
+    "lint": "./node_modules/.bin/eslint index.js lib/**/*.js",
     "cover": "./node_modules/.bin/istanbul cover run_tests"
   }
 }
