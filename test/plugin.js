@@ -1,7 +1,8 @@
 'use strict';
 
+var path   = require('path');
+
 var Plugin = require('../lib/plugin');
-// console.log(Plugin);
 
 exports.Plugin = {
     'exports a Plugin function': function (test) {
@@ -11,14 +12,14 @@ exports.Plugin = {
     },
     'creates a new Plugin from .js': function (test) {
         test.expect(1);
-        var newPlugin = new Plugin('test/fixtures/mock-plugin');
+        var newPlugin = new Plugin(path.join('test','fixtures','mock-plugin'));
         // console.log(newPlugin);
         test.ok(newPlugin);
         test.done();
     },
     'creates a new Plugin from dir': function (test) {
         test.expect(1);
-        var newPlugin = new Plugin('test/fixtures/mock-plugin-dir');
+        var newPlugin = new Plugin(path.join('test','fixtures','mock-plugin-dir'));
         // console.log(newPlugin);
         test.ok(newPlugin);
         test.done();
@@ -28,7 +29,7 @@ exports.Plugin = {
 exports.contents = {
     setUp: function (done) {
         // console.log(Plugin);
-        this.plugin = new Plugin('test/fixtures/mock-plugin-dir');
+        this.plugin = new Plugin(path.join('test','fixtures','mock-plugin-dir'));
         done();
     },
     'register exists': function (test) {
@@ -48,7 +49,7 @@ exports.contents = {
 exports.inherits = {
     'can register plugin with ineritance': function (test) {
         test.expect(2);
-        var pi = new Plugin('test/fixtures/mock-plugin');
+        var pi = new Plugin(path.join('test','fixtures','mock-plugin'));
         test.equal(typeof pi.register, 'function');
         pi.register();
         test.ok(Object.keys(pi.base));
@@ -56,10 +57,10 @@ exports.inherits = {
     },
     'plugin name remains the same after a plugin inerits': function (test) {
         test.expect(2);
-        var pi = new Plugin('test/fixtures/mock-plugin');
+        var pi = new Plugin(path.join('test','fixtures','mock-plugin'));
         test.equal(typeof pi.register, 'function');
         pi.register();
-        test.equal(pi.name, 'test/fixtures/mock-plugin');
+        test.equal(pi.name, path.join('test','fixtures','mock-plugin'));
         test.done();
     },
 }

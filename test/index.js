@@ -1,5 +1,7 @@
 'use strict';
 
+var path = require('path');
+
 var fixtures = require('../index');
 
 exports.exports = {
@@ -30,7 +32,7 @@ exports.exports = {
     },
     'plugin': function (test) {
         test.expect(1);
-        var p = fixtures.plugin('test/fixtures/mock-plugin');
+        var p = fixtures.plugin(path.join('test','fixtures','mock-plugin'));
         test.equal(typeof p.load_plugin, 'function');
         test.done();
     },
