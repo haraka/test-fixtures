@@ -1,4 +1,9 @@
 
+# 1.0.13 - Jan 03, 2017
+    * use path.join in place of path/to/stuff
+    * remove grunt
+    * add Appveyor badge
+
 # 1.0.11 - Jan 01, 2017
 
     * lint fixes
