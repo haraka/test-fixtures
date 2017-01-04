@@ -1,6 +1,7 @@
 [![Build Status][ci-img]][ci-url]
 [![Code Coverage][cov-img]][cov-url]
 [![Code Climate][clim-img]][clim-url]
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/ynjmw8jy76gt7inh?svg=true)](https://ci.appveyor.com/project/msimerson/haraka-test-fixtures)
 
 [![NPM][npm-img]][npm-url]
 
@@ -23,7 +24,7 @@ var fixtures = require('haraka-test-fixtures');
 * transaction
 * util_hmailitem
 
-These fixtures are rough analogs of their like-named siblings in Haraka/* with
+These fixtures are rough analogs of their like-named siblings in Haraka with
 varying levels of completeness. If there are functions necessary to enhance
 your ability to test, please do add them here.
 
