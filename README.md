@@ -7,6 +7,8 @@
 
 # haraka-test-fixtures
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/haraka/haraka-test-fixtures.svg)](https://greenkeeper.io/)
+
 Fixtures for testing Haraka and plugins
 
 # Usage
