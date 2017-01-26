@@ -1,4 +1,7 @@
 
+# 1.0.14 - Jan 24, 2017
+    * add path for npm packaged plugin inheriting an npm packaged plugin
+
 # 1.0.13 - Jan 03, 2017
     * use path.join in place of path/to/stuff
     * remove grunt
