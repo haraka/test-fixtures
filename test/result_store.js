@@ -2,18 +2,14 @@
 var Connection   = require('../lib/connection');
 var ResultStore  = require('../lib/result_store');
 
-function _set_up(callback) {
+function _set_up(done) {
     this.connection = Connection.createConnection();
     this.connection.results = new ResultStore(this.connection);
-    callback();
-}
-function _tear_down(callback) {
-    callback();
+    done();
 }
 
 exports.default_result = {
     setUp : _set_up,
-    tearDown : _tear_down,
     'init add' : function (test) {
         test.expect(1);
         this.connection.results.add('test_plugin', { pass: 'test pass' });
@@ -88,8 +84,6 @@ exports.default_result = {
 
 exports.has = {
     setUp : _set_up,
-    tearDown : _tear_down,
-    /* jshint maxlen: 100 */
     'has, list, string' : function (test) {
         test.expect(2);
         this.connection.results.add('test_plugin', { pass: 'test pass' });
@@ -138,13 +132,33 @@ exports.has = {
 
 exports.private_collate = {
     setUp : _set_up,
-    tearDown : _tear_down,
     'collate, arrays are shown in output' : function (test) {
         test.expect(2);
         this.connection.results.push('test_plugin', { foo: 'bar' });
         // console.log(this.connection.results);
         test.equal(true, this.connection.results.has('test_plugin', 'foo', /bar/));
         test.ok(/bar/.test(this.connection.results.get('test_plugin').human));
+        test.done();
+    },
+};
+
+exports.get = {
+    setUp : function (done) {
+		this.connection = Connection.createConnection();
+		this.connection.results = new ResultStore(this.connection);
+        this.connection.results.add('test_plugin', { pass: 'foo' });
+        done();
+    },
+    'has, plugin' : function (test) {
+        test.expect(1);
+        var cr = this.connection.results.get({ name: 'test_plugin' });
+        test.equal('foo', cr.pass[0]);
+        test.done();
+    },
+    'has, plugin name' : function (test) {
+        test.expect(1);
+        var cr = this.connection.results.get('test_plugin');
+        test.equal('foo', cr.pass[0]);
         test.done();
     },
 };
