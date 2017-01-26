@@ -1,5 +1,8 @@
 
-# 1.0.15 - Jan 24, 2017
+# 1.0.16 - Jan 26, 2017
+    * replace copied results_store with freshly packaged haraka-results
+
+# 1.0.15 - Jan 25, 2017
     * update result_store, adding get(plugin) syntax.
 
 # 1.0.14 - Jan 24, 2017
