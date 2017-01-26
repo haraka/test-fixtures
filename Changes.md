@@ -1,4 +1,7 @@
 
+# 1.0.15 - Jan 24, 2017
+    * update result_store, adding get(plugin) syntax.
+
 # 1.0.14 - Jan 24, 2017
     * add path for npm packaged plugin inheriting an npm packaged plugin
 
