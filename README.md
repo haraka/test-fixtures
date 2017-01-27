@@ -19,7 +19,7 @@ var fixtures = require('haraka-test-fixtures');
 * line_socket
 * logger
 * plugin
-* result_store
+* [results](https://github.com/haraka/haraka-results)
 * stub
 * transaction
 * util_hmailitem

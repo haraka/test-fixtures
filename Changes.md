@@ -1,14 +1,17 @@
 
-# 1.0.17 - Jan 26, 2017
+# 1.0.18 - 2017-01-
+
+
+# 1.0.17 - 2017-01-26
     * add alias of haraka-results at fixtures.results (finger friendly)
 
-# 1.0.16 - Jan 26, 2017
+# 1.0.16 - 2017-01-26
     * replace copied results_store with freshly packaged haraka-results
 
-# 1.0.15 - Jan 25, 2017
+# 1.0.15 - 2017-01-25
     * update result_store, adding get(plugin) syntax.
 
-# 1.0.14 - Jan 24, 2017
+# 1.0.15 - 2017-01-24
     * add path for npm packaged plugin inheriting an npm packaged plugin
 
 # 1.0.13 - Jan 03, 2017
