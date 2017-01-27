@@ -1,7 +1,7 @@
 'use strict';
 
-// backwards compatibility. New plugins should use haraka-results directly in their tests
-exports.result_store   = require('haraka-results');
+exports.results        = require('haraka-results');
+exports.result_store   = exports.results;
 
 exports.connection     = require('./lib/connection');
 exports.line_socket    = require('./lib/line_socket');

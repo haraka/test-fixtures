@@ -1,4 +1,7 @@
 
+# 1.0.17 - Jan 26, 2017
+    * add alias of haraka-results at fixtures.results (finger friendly)
+
 # 1.0.16 - Jan 26, 2017
     * replace copied results_store with freshly packaged haraka-results
 
