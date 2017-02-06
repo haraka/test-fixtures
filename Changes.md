@@ -1,8 +1,11 @@
 
+# 1.0.18 - 2017-0_-__
+
+- replace local rules with eslint-plugin-haraka 
+
 # 1.0.17 - 2017-01-26
 
 - add alias of haraka-results at fixtures.results (finger friendly)
-- replace local rules with eslint-plugin-haraka 
 
 # 1.0.16 - Jan 26, 2017
 
