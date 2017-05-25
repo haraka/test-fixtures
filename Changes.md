@@ -1,7 +1,10 @@
 
-# 1.0.18 - 2017-0_-__
+# 1.0.19 - 2017-__-__
+
+# 1.0.18 - 2017-05-25
 
 - replace local rules with eslint-plugin-haraka 
+- add server and setImmedate to the plugin sandbox
 
 # 1.0.17 - 2017-01-26
 
