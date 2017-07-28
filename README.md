@@ -37,7 +37,7 @@ your ability to test, please do add them here.
 [clim-url]: https://codeclimate.com/github/haraka/haraka-test-fixtures
 [npm-img]: https://nodei.co/npm/haraka-test-fixtures.png
 [npm-url]: https://www.npmjs.com/package/haraka-test-fixtures
-[win-img]: https://ci.appveyor.com/api/projects/status/ynjmw8jy76gt7inh?svg=true
+[win-img]: https://ci.appveyor.com/api/projects/status/mphk1iq8ybxr91s8?svg=true
 [win-url]: https://ci.appveyor.com/project/msimerson/haraka-test-fixtures
 [gk-img]: https://badges.greenkeeper.io/haraka/haraka-test-fixtures.svg
 [gk-url]: https://greenkeeper.io/
