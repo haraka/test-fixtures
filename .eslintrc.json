@@ -1,9 +1,13 @@
 {
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
   "plugins": [
     "haraka"
   ],
-  "extends": ["eslint:recommended", "plugin:haraka/recommended"],
+  "extends": [ "eslint:recommended", "plugin:haraka/recommended" ],
   "rules": {
-    "no-empty": ["error", { "allowEmptyCatch": true }]
   }
 }
