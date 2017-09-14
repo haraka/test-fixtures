@@ -1,8 +1,8 @@
 'use strict';
 
-var path   = require('path');
+const path   = require('path');
 
-var Plugin = require('../lib/plugin');
+const Plugin = require('../lib/plugin');
 
 exports.Plugin = {
     'exports a Plugin function': function (test) {
@@ -12,14 +12,14 @@ exports.Plugin = {
     },
     'creates a new Plugin from .js': function (test) {
         test.expect(1);
-        var newPlugin = new Plugin(path.join('test','fixtures','mock-plugin'));
+        const newPlugin = new Plugin(path.join('test','fixtures','mock-plugin'));
         // console.log(newPlugin);
         test.ok(newPlugin);
         test.done();
     },
     'creates a new Plugin from dir': function (test) {
         test.expect(1);
-        var newPlugin = new Plugin(path.join('test','fixtures','mock-plugin-dir'));
+        const newPlugin = new Plugin(path.join('test','fixtures','mock-plugin-dir'));
         // console.log(newPlugin);
         test.ok(newPlugin);
         test.done();
@@ -49,7 +49,7 @@ exports.contents = {
 exports.inherits = {
     'can register plugin with ineritance': function (test) {
         test.expect(2);
-        var pi = new Plugin(path.join('test','fixtures','mock-plugin'));
+        const pi = new Plugin(path.join('test','fixtures','mock-plugin'));
         test.equal(typeof pi.register, 'function');
         pi.register();
         test.ok(Object.keys(pi.base));
@@ -57,7 +57,7 @@ exports.inherits = {
     },
     'plugin name remains the same after a plugin inerits': function (test) {
         test.expect(2);
-        var pi = new Plugin(path.join('test','fixtures','mock-plugin'));
+        const pi = new Plugin(path.join('test','fixtures','mock-plugin'));
         test.equal(typeof pi.register, 'function');
         pi.register();
         test.equal(pi.name, path.join('test','fixtures','mock-plugin'));

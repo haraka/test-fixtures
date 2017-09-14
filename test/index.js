@@ -1,8 +1,8 @@
 'use strict';
 
-var path = require('path');
+const path = require('path');
 
-var fixtures = require('../index');
+const fixtures = require('../index');
 
 exports.exports = {
     'stub': function (test) {
@@ -32,13 +32,13 @@ exports.exports = {
     },
     'plugin': function (test) {
         test.expect(1);
-        var p = new fixtures.plugin(path.join('test', 'fixtures', 'mock-plugin'));
+        const p = new fixtures.plugin(path.join('test', 'fixtures', 'mock-plugin'));
         test.equal('function', typeof p.load_plugin);
         test.done();
     },
     'result_store': function (test) {
         test.expect(1);
-        var rs = new fixtures.result_store();
+        const rs = new fixtures.result_store();
         // console.log(rs);
         test.equal('function', typeof rs.add);
         test.done();

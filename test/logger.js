@@ -1,8 +1,8 @@
 'use strict';
 
-var logger = require('../lib/logger');
+const logger = require('../lib/logger');
 
-var plugin = { name: 'mock_plugin' };
+const plugin = { name: 'mock_plugin' };
 
 // console.log(logger);
 exports.logger = {
