@@ -1,6 +1,6 @@
 'use strict';
 
-var vm = require('../lib/vm_harness');
+const vm = require('../lib/vm_harness');
 // console.log(vm);
 
 exports.sandbox_require = {
