@@ -37,7 +37,7 @@ exports.transaction = {
         test.ok(newTrans.message_stream.add_line('foo\r\n'));
         test.done();
     },
-    'can add multiple value header': function(test){
+    'can add multiple value header': function (test){
         test.expect(2);
         const newTrans = transaction.createTransaction();
         newTrans.add_header('X-Test-Header', 'Has a value');
