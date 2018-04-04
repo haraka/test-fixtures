@@ -1,6 +1,10 @@
 
-## 1.0.23 - 2017-__-__
+## 1.0.24 - 2018-__-__
 
+
+## 1.0.23 - 2018-04-04
+
+- added array values to transaction.header and header.get_all support
 
 ## 1.0.22 - 2017-09-22
 
