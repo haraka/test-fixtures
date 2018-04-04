@@ -1,6 +1,9 @@
 
 ## 1.0.24 - 2018-__-__
 
+- connection: add init_transaction()
+- connection: use es6 classes
+- transaction: use es6 classes
 
 ## 1.0.23 - 2018-04-04
 
