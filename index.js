@@ -1,4 +1,3 @@
-'use strict';
 
 exports.results        = require('haraka-results');
 exports.result_store   = exports.results;
