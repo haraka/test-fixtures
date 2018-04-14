@@ -1,6 +1,10 @@
 
-## 1.0.24 - 2018-__-__
+## 1.0.25 - 2018-__-__
 
+
+## 1.0.24 - 2018-04-13
+
+- connection: add get() and improved set()
 - connection: add init_transaction()
 - connection: use es6 classes
 - transaction: use es6 classes
