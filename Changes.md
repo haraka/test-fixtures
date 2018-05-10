@@ -1,25 +1,34 @@
 
-## 1.0.24 - 2018-__-__
+## 1.0.25 - 2018-__-__
 
+
+## 1.0.24 - 2018-05-10
+
+- connection: add get() and improved set()
 - connection: add init_transaction()
 - connection: use es6 classes
 - transaction: use es6 classes
+
 
 ## 1.0.23 - 2018-04-04
 
 - added array values to transaction.header and header.get_all support
 
+
 ## 1.0.22 - 2017-09-22
 
 - plugins: provide haraka_require
+
 
 ## 1.0.21 - 2017-09-14
 
 - lint updates
 
+
 ## 1.0.20 - 2017-09-04
 
 - use [haraka-notes](https://github.com/haraka/haraka-notes)
+
 
 ## 1.0.19 - 2017-06-16
 
