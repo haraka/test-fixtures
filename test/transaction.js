@@ -16,14 +16,7 @@ exports.transaction = {
         test.ok(newTrans);
         test.done();
     },
-    'can add a header': function (test) {
-        test.expect(1);
-        const newTrans = transaction.createTransaction();
-        newTrans.add_header('X-Test-Header', 'Has a value');
-        test.ok(true);  // previous function didn't throw
-        test.done();
-    },
-    'can get a header': function (test) {
+    'can set and get a header': function (test) {
         test.expect(1);
         const newTrans = transaction.createTransaction();
         newTrans.add_header('X-Test-Header', 'Has a value');
@@ -37,7 +30,7 @@ exports.transaction = {
         test.ok(newTrans.message_stream.add_line('foo\r\n'));
         test.done();
     },
-    'can add multiple value header': function (test){
+    'can add a multiple value header': function (test) {
         test.expect(2);
         const newTrans = transaction.createTransaction();
         newTrans.add_header('X-Test-Header', 'Has a value');

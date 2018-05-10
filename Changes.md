@@ -1,6 +1,8 @@
 
-## 1.0.25 - 2018-__-__
+## 1.0.25 - 2018-05-10
 
+- transaction: make t.header a class (as it is in Haraka). Making transaction
+  into an es6 class (in 1.0.24) changed how 'this' resolves.
 
 ## 1.0.24 - 2018-05-10
 
