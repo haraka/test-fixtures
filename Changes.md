@@ -1,4 +1,8 @@
 
+## 1.0.26 - 2018-11-15
+
+- transaction: add header.get_decoded()
+
 ## 1.0.25 - 2018-05-10
 
 - transaction: make t.header a class (as it is in Haraka). Making transaction
