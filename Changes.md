@@ -1,4 +1,8 @@
 
+## 1.0.27 - 2018-11-15
+
+- transaction: have header.add() populate header_decoded too
+
 ## 1.0.26 - 2018-11-15
 
 - transaction: add header.get_decoded()

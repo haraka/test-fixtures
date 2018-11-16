@@ -40,4 +40,28 @@ exports.transaction = {
         test.equal(testHdrVals[1], 'and another');
         test.done();
     }
-};
+}
+
+exports.Header = {
+    setUp: function (done) {
+        this.txn = transaction.createTransaction();
+        done();
+    },
+    'add/get': function (test) {
+        test.expect(2)
+        this.txn.header.add('From', 'Some Body <body@example.com>')
+        // console.log(this.txn);
+        test.ok(this.txn)
+        test.equal(this.txn.header.get('From'), 'Some Body <body@example.com>')
+        test.done();
+    },
+    'get_decoded': function (test) {
+        test.expect(2)
+        this.txn.header.add('From', 'Some Body <body@example.com>')
+        // console.log(this.txn);
+        test.ok(this.txn)
+        test.equal(this.txn.header.get_decoded('From'), 'Some Body <body@example.com>')
+        test.done();
+    }
+
+}
