@@ -1,16 +1,24 @@
 
+## 1.0.28 - 2019-04-01
+
+- transaction: populate this.results
+
+
 ## 1.0.27 - 2018-11-15
 
 - transaction: have header.add() populate header_decoded too
+
 
 ## 1.0.26 - 2018-11-15
 
 - transaction: add header.get_decoded()
 
+
 ## 1.0.25 - 2018-05-10
 
 - transaction: make t.header a class (as it is in Haraka). Making transaction
   into an es6 class (in 1.0.24) changed how 'this' resolves.
+
 
 ## 1.0.24 - 2018-05-10
 
