@@ -1,9 +1,9 @@
 {
-  "author": "Haraka Team <harakamail@gmail.com>",
+  "author": "Haraka Team <haraka.mail@gmail.com>",
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "homepage": "http://haraka.github.io",
   "repository": {
     "type": "git",
@@ -27,13 +27,13 @@
     "nodeunit": "*"
   },
   "bugs": {
-    "mail": "helpme@gmail.com",
+    "mail": "haraka.mail@gmail.com",
     "url": "https://github.com/haraka/haraka-test-fixtures/issues"
   },
   "scripts": {
-    "test": "./run_tests",
-    "lint": "./node_modules/.bin/eslint index.js lib/*.js test/*.js",
-    "lintfix": "./node_modules/.bin/eslint --fix index.js lib/*.js test/*.js",
-    "cover": "./node_modules/.bin/istanbul cover run_tests"
+    "test": "node run_tests",
+    "lint": "node node_modules/.bin/eslint index.js lib/*.js test/*.js",
+    "lintfix": "node node_modules/.bin/eslint --fix index.js lib/*.js test/*.js",
+    "cover": "node node_modules/.bin/istanbul cover run_tests"
   }
 }
