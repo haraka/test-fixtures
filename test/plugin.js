@@ -5,19 +5,19 @@ const path   = require('path');
 const Plugin = require('../lib/plugin');
 
 exports.Plugin = {
-    'exports a Plugin function': function (test) {
+    'exports a Plugin function' (test) {
         test.expect(1);
         test.equal(typeof Plugin, 'function');
         test.done();
     },
-    'creates a new Plugin from .js': function (test) {
+    'creates a new Plugin from .js' (test) {
         test.expect(1);
         const newPlugin = new Plugin(path.join('test','fixtures','mock-plugin'));
         // console.log(newPlugin);
         test.ok(newPlugin);
         test.done();
     },
-    'creates a new Plugin from dir': function (test) {
+    'creates a new Plugin from dir' (test) {
         test.expect(1);
         const newPlugin = new Plugin(path.join('test','fixtures','mock-plugin-dir'));
         // console.log(newPlugin);
@@ -27,18 +27,18 @@ exports.Plugin = {
 }
 
 exports.contents = {
-    setUp: function (done) {
+    setUp (done) {
         // console.log(Plugin);
         this.plugin = new Plugin(path.join('test','fixtures','mock-plugin-dir'));
         done();
     },
-    'register exists': function (test) {
+    'register exists' (test) {
         test.expect(1);
         // console.log(this.plugin);
         test.equal(typeof this.plugin.register, 'function');
         test.done();
     },
-    'register runs': function (test) {
+    'register runs' (test) {
         test.expect(1);
         this.plugin.register();
         test.ok(true); // register() didn't throw
@@ -47,7 +47,7 @@ exports.contents = {
 }
 
 exports.inherits = {
-    'can register plugin with ineritance': function (test) {
+    'can register plugin with ineritance' (test) {
         test.expect(2);
         const pi = new Plugin(path.join('test','fixtures','mock-plugin'));
         test.equal(typeof pi.register, 'function');
@@ -55,7 +55,7 @@ exports.inherits = {
         test.ok(Object.keys(pi.base));
         test.done();
     },
-    'plugin name remains the same after a plugin inerits': function (test) {
+    'plugin name remains the same after a plugin inerits' (test) {
         test.expect(2);
         const pi = new Plugin(path.join('test','fixtures','mock-plugin'));
         test.equal(typeof pi.register, 'function');
