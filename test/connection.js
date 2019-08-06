@@ -4,12 +4,12 @@ const connection = require('../lib/connection');
 // console.log(connection);
 
 exports.exports = {
-    'Connection': function (test) {
+    'Connection' (test) {
         test.expect(1);
         test.equal(typeof connection.Connection, 'function');
         test.done();
     },
-    'createConnection': function (test) {
+    'createConnection' (test) {
         test.expect(1);
         test.equal(typeof connection.createConnection, 'function');
         test.done();
@@ -17,47 +17,47 @@ exports.exports = {
 }
 
 exports.connection = {
-    setUp: function (done) {
+    setUp (done) {
         this.connection = connection.createConnection()
         done()
     },
-    'creates a new connection': function (test) {
+    'creates a new connection' (test) {
         test.expect(1);
         test.ok(this.connection);
         test.done();
     },
-    'creates a new transaction': function (test) {
+    'creates a new transaction' (test) {
         test.expect(1);
         this.connection.init_transaction();
         test.ok(this.connection.transaction);
         test.done();
     },
-    'remote.ip': function (test) {
+    'remote.ip' (test) {
         test.expect(1);
         test.equal(this.connection.remote.ip, '127.0.0.1');
         test.done();
     },
-    'local': function (test) {
+    'local' (test) {
         test.expect(1);
         test.deepEqual(this.connection.local, {});
         test.done();
     },
-    'hello': function (test) {
+    'hello' (test) {
         test.expect(1);
         test.deepEqual(this.connection.hello, {});
         test.done();
     },
-    'tls': function (test) {
+    'tls' (test) {
         test.expect(1);
         test.deepEqual(this.connection.tls, {});
         test.done();
     },
-    'notes': function (test) {
+    'notes' (test) {
         test.expect(1);
         test.deepEqual(this.connection.notes, {});
         test.done();
     },
-    'set': function (test) {
+    'set' (test) {
         test.expect(1);
         this.connection.set('remote', 'ip', '192.168.1.1');
         test.deepEqual(this.connection.remote.ip, '192.168.1.1');

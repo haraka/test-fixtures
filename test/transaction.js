@@ -4,33 +4,33 @@ const transaction = require('../lib/transaction');
 // console.log(transaction);
 
 exports.transaction = {
-    'exports createTransaction': function (test) {
+    'exports createTransaction' (test) {
         test.expect(1);
         test.equal(typeof transaction.createTransaction, 'function');
         test.done();
     },
-    'creates a new transaction': function (test) {
+    'creates a new transaction' (test) {
         test.expect(1);
         const newTrans = transaction.createTransaction();
         // console.log(newTrans);
         test.ok(newTrans);
         test.done();
     },
-    'can set and get a header': function (test) {
+    'can set and get a header' (test) {
         test.expect(1);
         const newTrans = transaction.createTransaction();
         newTrans.add_header('X-Test-Header', 'Has a value');
         test.equal(newTrans.header.get('X-Test-Header'), 'Has a value');
         test.done();
     },
-    'can call message_stream.add_line': function (test) {
+    'can call message_stream.add_line' (test) {
         test.expect(1);
         const newTrans = transaction.createTransaction();
         //console.log(newTrans.message_stream);
         test.ok(newTrans.message_stream.add_line('foo\r\n'));
         test.done();
     },
-    'can add a multiple value header': function (test) {
+    'can add a multiple value header' (test) {
         test.expect(2);
         const newTrans = transaction.createTransaction();
         newTrans.add_header('X-Test-Header', 'Has a value');
@@ -43,11 +43,11 @@ exports.transaction = {
 }
 
 exports.Header = {
-    setUp: function (done) {
+    setUp (done) {
         this.txn = transaction.createTransaction();
         done();
     },
-    'add/get': function (test) {
+    'add/get' (test) {
         test.expect(2)
         this.txn.header.add('From', 'Some Body <body@example.com>')
         // console.log(this.txn);
@@ -55,7 +55,7 @@ exports.Header = {
         test.equal(this.txn.header.get('From'), 'Some Body <body@example.com>')
         test.done();
     },
-    'get_decoded': function (test) {
+    'get_decoded' (test) {
         test.expect(2)
         this.txn.header.add('From', 'Some Body <body@example.com>')
         // console.log(this.txn);
