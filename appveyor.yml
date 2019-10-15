@@ -15,7 +15,7 @@ before_test:
 
 # Post-install test scripts.
 test_script:
-  - node run_tests
+  - npm run test
 
 # Don't actually build.
 build: off

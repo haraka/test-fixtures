@@ -1,4 +1,15 @@
 
+## 1.0.30 - 2019-10-14
+
+- codeclimate: update eslint to v6
+- convert eslintrc from json to yaml
+- replace node 6 with node 12 CI testing
+- lib/plugin: update with es6 class
+- es6: object-shorthand
+- coverage: replace deprecated istanbul with nyc
+- test runner: replace deprecated nodeunit with mocha
+
+
 ## 1.0.29 - 2019-04-11
 
 - put results in transaction. This time for real.
