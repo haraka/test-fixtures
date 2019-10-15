@@ -34,6 +34,6 @@
     "test": "npx _mocha",
     "lint": "npx eslint index.js lib/*.js test/*.js",
     "lintfix": "npx eslint --fix index.js lib/*.js test/*.js",
-    "cover": "npx nyc npm run test"
+    "cover": "npx nyc --reporter=lcov npm run test"
   }
 }
