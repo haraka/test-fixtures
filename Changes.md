@@ -1,4 +1,9 @@
 
+## 1.0.31 - 2020-07-28
+
+- transaction: lowercase the keys in class Header
+
+
 ## 1.0.30 - 2019-10-14
 
 - codeclimate: update eslint to v6

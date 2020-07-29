@@ -2,7 +2,7 @@
 [![Code Coverage][cov-img]][cov-url]
 [![Code Climate][clim-img]][clim-url]
 [![Windows Build status][win-img]][win-url]
-[![Greenkeeper badge][gk-img]][gk-url]
+
 [![NPM][npm-img]][npm-url]
 
 # haraka-test-fixtures
@@ -29,15 +29,13 @@ varying levels of completeness. If there are functions necessary to enhance
 your ability to test, please do add them here.
 
 
-[ci-img]: https://travis-ci.org/haraka/haraka-test-fixtures.svg
-[ci-url]: https://travis-ci.org/haraka/haraka-test-fixtures
+[ci-img]: https://github.com/haraka/haraka-test-fixtures/workflows/CI%20Tests/badge.svg
+[ci-url]: https://github.com/haraka/haraka-test-fixtures/actions
 [cov-img]: https://codecov.io/github/haraka/haraka-test-fixtures/coverage.svg
 [cov-url]: https://codecov.io/github/haraka/haraka-test-fixtures
 [clim-img]: https://codeclimate.com/github/haraka/haraka-test-fixtures/badges/gpa.svg
 [clim-url]: https://codeclimate.com/github/haraka/haraka-test-fixtures
 [npm-img]: https://nodei.co/npm/haraka-test-fixtures.png
 [npm-url]: https://www.npmjs.com/package/haraka-test-fixtures
-[win-img]: https://ci.appveyor.com/api/projects/status/mphk1iq8ybxr91s8?svg=true
-[win-url]: https://ci.appveyor.com/project/msimerson/haraka-test-fixtures
-[gk-img]: https://badges.greenkeeper.io/haraka/haraka-test-fixtures.svg
-[gk-url]: https://greenkeeper.io/
+[win-img]: https://github.com/haraka/haraka-test-fixtures/workflows/Tests%20-%20Windows/badge.svg
+[win-url]: https://github.com/haraka/haraka-test-fixtures/actions/
