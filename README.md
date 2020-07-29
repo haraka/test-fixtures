@@ -2,7 +2,6 @@
 [![Code Coverage][cov-img]][cov-url]
 [![Code Climate][clim-img]][clim-url]
 [![Windows Build status][win-img]][win-url]
-[![Greenkeeper badge][gk-img]][gk-url]
 [![NPM][npm-img]][npm-url]
 
 # haraka-test-fixtures
@@ -39,5 +38,3 @@ your ability to test, please do add them here.
 [npm-url]: https://www.npmjs.com/package/haraka-test-fixtures
 [win-img]: https://ci.appveyor.com/api/projects/status/mphk1iq8ybxr91s8?svg=true
 [win-url]: https://ci.appveyor.com/project/msimerson/haraka-test-fixtures
-[gk-img]: https://badges.greenkeeper.io/haraka/haraka-test-fixtures.svg
-[gk-url]: https://greenkeeper.io/
