@@ -1,4 +1,9 @@
 
+## 1.0.32 - 2020-07-28
+
+- transaction: add logging methods
+
+
 ## 1.0.31 - 2020-07-28
 
 - transaction: lowercase the keys in class Header
