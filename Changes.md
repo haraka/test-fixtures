@@ -1,4 +1,9 @@
 
+## 1.0.33 - 2020-12-17
+
+- conn: pass config to new transactions
+
+
 ## 1.0.32 - 2020-07-28
 
 - transaction: add logging methods
