@@ -1,4 +1,10 @@
 
+## 1.0.34 - 2022-05-23
+
+- dep(eslint): 6 -> 8
+- ci(node): add v18 testing
+
+
 ## 1.0.33 - 2020-12-17
 
 - conn: pass config to new transactions
