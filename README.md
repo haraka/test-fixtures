@@ -28,8 +28,8 @@ varying levels of completeness. If there are functions necessary to enhance
 your ability to test, please do add them here.
 
 
-[ci-img]: https://github.com/haraka/haraka-test-fixtures/workflows/CI%20Tests/badge.svg
-[ci-url]: https://github.com/haraka/haraka-test-fixtures/actions
+[ci-img]: https://github.com/haraka/haraka-test-fixtures/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/haraka/haraka-test-fixtures/actions/workflows/ci.yml
 [cov-img]: https://codecov.io/github/haraka/haraka-test-fixtures/coverage.svg
 [cov-url]: https://codecov.io/github/haraka/haraka-test-fixtures
 [clim-img]: https://codeclimate.com/github/haraka/haraka-test-fixtures/badges/gpa.svg
