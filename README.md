@@ -23,16 +23,14 @@ var fixtures = require('haraka-test-fixtures');
 * transaction
 * util_hmailitem
 
-These fixtures are rough analogs of their like-named siblings in Haraka with
-varying levels of completeness. If there are functions necessary to enhance
-your ability to test, please do add them here.
+These fixtures are rough analogs of their like-named siblings in Haraka with varying levels of completeness. If there are functions necessary to enhance your ability to test, please do add them here.
 
 
-[ci-img]: https://github.com/haraka/haraka-test-fixtures/actions/workflows/ci.yml/badge.svg
-[ci-url]: https://github.com/haraka/haraka-test-fixtures/actions/workflows/ci.yml
-[cov-img]: https://codecov.io/github/haraka/haraka-test-fixtures/coverage.svg
-[cov-url]: https://codecov.io/github/haraka/haraka-test-fixtures
-[clim-img]: https://codeclimate.com/github/haraka/haraka-test-fixtures/badges/gpa.svg
-[clim-url]: https://codeclimate.com/github/haraka/haraka-test-fixtures
+[ci-img]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml/badge.svg
+[ci-url]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml
+[cov-img]: https://codecov.io/github/haraka/test-fixtures/coverage.svg
+[cov-url]: https://codecov.io/github/haraka/test-fixtures
+[clim-img]: https://codeclimate.com/github/haraka/test-fixtures/badges/gpa.svg
+[clim-url]: https://codeclimate.com/github/haraka/test-fixtures
 [npm-img]: https://nodei.co/npm/haraka-test-fixtures.png
 [npm-url]: https://www.npmjs.com/package/haraka-test-fixtures
