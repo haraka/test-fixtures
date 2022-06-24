@@ -24,11 +24,9 @@ describe('transaction', function () {
         done();
     })
 
-    it('can call message_stream.add_line', (done) => {
+    it('can call message_stream.add_line', () => {
         const newTrans = transaction.createTransaction();
-        //console.log(newTrans.message_stream);
-        assert.ok(newTrans.message_stream.add_line('foo\r\n'));
-        done();
+        newTrans.message_stream.add_line('foo\r\n')
     })
 
     it('can add a multiple value header', (done) => {
