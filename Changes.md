@@ -1,6 +1,13 @@
 ### Unreleased
 
 
+### [1.1.0] - 2022-06-23
+
+- dep: add haraka-message-stream
+- transaction: added Body
+- transaction: added MessageStream
+
+
 ### [1.0.35] - 2022-06-05
 
 - ci: update GHA workflow with shared
@@ -153,3 +160,4 @@
 
 
 [1.0.35]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.0.35
+[1.1.0]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.1.0

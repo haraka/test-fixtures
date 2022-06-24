@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.0.35",
+  "version": "1.1.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:haraka/haraka-test-fixtures.git"
@@ -16,22 +16,21 @@
     "address-rfc2821": "*",
     "haraka-config": "*",
     "haraka-constants": "*",
+    "haraka-message-stream": "^1.0.0",
     "haraka-notes": "*",
-    "haraka-results": "*"
+    "haraka-results": ">=2"
   },
-  "optionalDependencies": {},
   "devDependencies": {
     "eslint": ">=8",
     "eslint-plugin-haraka": "*",
     "mocha": ">=9"
   },
   "bugs": {
-    "mail": "haraka.mail@gmail.com",
     "url": "https://github.com/haraka/haraka-test-fixtures/issues"
   },
   "scripts": {
     "test": "npx mocha",
-    "lint": "npx eslint index.js lib/*.js test",
+    "lint": "npx eslint index.js lib test",
     "lintfix": "npx eslint --fix index.js lib test"
   }
 }
