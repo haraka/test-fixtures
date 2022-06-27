@@ -5,6 +5,7 @@
 
 - dep: replace message-stream with email-message
 - transaction: replace Header and Body stubs with email-message
+- lint: string concatenation
 
 
 ### [1.1.0] - 2022-06-23
