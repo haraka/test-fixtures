@@ -1,6 +1,13 @@
 ### Unreleased
 
 
+### [1.2.0] - 2022-06-27
+
+- dep: replace message-stream with email-message
+- transaction: replace Header and Body stubs with email-message
+- lint: string concatenation
+
+
 ### [1.1.0] - 2022-06-23
 
 - dep: add haraka-message-stream
@@ -161,3 +168,4 @@
 
 [1.0.35]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.0.35
 [1.1.0]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.1.0
+[1.2.0]: https://github.com/haraka/test-fixtures/releases/tag/1.2.0
