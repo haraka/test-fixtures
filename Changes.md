@@ -3,7 +3,7 @@
 
 ### [1.2.1] - 2022-07-07
 
-- ci: use windows and ubuntu workflows in haraka/.github
+- ci: use windows & ubuntu workflows in haraka/.github
 
 
 ### [1.2.0] - 2022-06-27
