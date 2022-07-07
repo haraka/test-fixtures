@@ -1,6 +1,11 @@
 ### Unreleased
 
 
+### [1.2.1] - 2022-07-07
+
+- ci: use windows & ubuntu workflows in haraka/.github
+
+
 ### [1.2.0] - 2022-06-27
 
 - dep: replace message-stream with email-message
@@ -169,3 +174,4 @@
 [1.0.35]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.0.35
 [1.1.0]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.1.0
 [1.2.0]: https://github.com/haraka/test-fixtures/releases/tag/1.2.0
+[1.2.1]: https://github.com/haraka/test-fixtures/releases/tag/1.2.1
