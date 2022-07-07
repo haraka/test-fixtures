@@ -14,10 +14,10 @@ jobs:
     uses: haraka/.github/.github/workflows/coverage.yml@master
     secrets: inherit
 
-  test:
+  ubuntu:
     needs: [ lint ]
     uses: haraka/.github/.github/workflows/ubuntu.yml@master
 
-  test-win:
+  windows:
     needs: [ lint ]
     uses: haraka/.github/.github/workflows/windows.yml@master
