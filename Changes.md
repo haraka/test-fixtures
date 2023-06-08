@@ -1,6 +1,11 @@
 ### Unreleased
 
 
+### [1.3.0] - 2023-06-08
+
+- dep(haraka-results): require at least 2.2 (due to redis dep)
+
+
 ### [1.2.1] - 2022-07-07
 
 - ci: use windows & ubuntu workflows in haraka/.github
@@ -175,3 +180,4 @@
 [1.1.0]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.1.0
 [1.2.0]: https://github.com/haraka/test-fixtures/releases/tag/1.2.0
 [1.2.1]: https://github.com/haraka/test-fixtures/releases/tag/1.2.1
+[1.3.0]: https://github.com/haraka/test-fixtures/releases/tag/1.3.0
