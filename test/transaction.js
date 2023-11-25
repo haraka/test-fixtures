@@ -39,6 +39,16 @@ describe('transaction', function () {
         done();
     })
 
+    it('can add_data with parse_body = true', (done) => {
+        const newTrans = transaction.createTransaction('', {"headers":{"max_lines":1000}});
+        newTrans.parse_body = true;
+        newTrans.add_data(`From: test@example.com\r\n`);
+        newTrans.add_data(`\r\n`);
+        newTrans.add_data(`abcde\r\n`);
+        newTrans.add_data(`zyxwvu\r\n`);
+        done();
+    })
+
     describe('Header', function () {
 
         beforeEach((done) => {
