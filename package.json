@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "repository": {
     "type": "git",
     "url": "git@github.com:haraka/test-fixtures.git"
@@ -13,11 +13,11 @@
     "node": ">=12"
   },
   "dependencies": {
-    "address-rfc2821": "*",
-    "haraka-config": "*",
-    "haraka-constants": "*",
-    "haraka-email-message": "~1.2",
-    "haraka-notes": "*",
+    "address-rfc2821": "2.1.1",
+    "haraka-config": "^1.1.0",
+    "haraka-constants": "1.0.6",
+    "haraka-email-message": "~1.2.0",
+    "haraka-notes": "1.0.6",
     "haraka-results": "^2.2.3"
   },
   "devDependencies": {
