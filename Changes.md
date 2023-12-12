@@ -1,6 +1,11 @@
 ### Unreleased
 
 
+### [1.3.2] - 2023-12-12
+
+- dep(haraka-results): bump version to 2.2.3
+
+
 ### [1.3.1] - 2023-12-03
 
 - transaction: update Buffer syntax (sync with Haraka) (#56)
@@ -187,3 +192,4 @@
 [1.2.1]: https://github.com/haraka/test-fixtures/releases/tag/1.2.1
 [1.3.0]: https://github.com/haraka/test-fixtures/releases/tag/1.3.0
 [1.4.0]: https://github.com/haraka/test-fixtures/releases/tag/1.4.0
+[1.3.2]: https://github.com/haraka/test-fixtures/releases/tag/1.3.2
