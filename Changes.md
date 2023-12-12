@@ -1,6 +1,11 @@
 ### Unreleased
 
 
+### [1.3.3] - 2023-12-12
+
+- deps(\*): pin versions to latest
+
+
 ### [1.3.2] - 2023-12-12
 
 - dep(haraka-results): bump version to 2.2.3
@@ -193,3 +198,4 @@
 [1.3.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.0
 [1.3.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.1
 [1.3.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.2
+[1.3.3]: https://github.com/haraka/test-fixtures/releases/tag/1.3.3
