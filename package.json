@@ -13,7 +13,7 @@
     "node": ">=12"
   },
   "dependencies": {
-    "address-rfc2821": "2.1.1",
+    "address-rfc2821": "2.1.2",
     "haraka-config": "^1.1.0",
     "haraka-constants": "1.0.6",
     "haraka-email-message": "~1.2.0",
