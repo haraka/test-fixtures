@@ -10,7 +10,7 @@ Fixtures for testing Haraka and plugins
 
 # Usage
 
-var fixtures = require('haraka-test-fixtures');
+`const fixtures = require('haraka-test-fixtures');`
 
 # Exports the following fixture types:
 
@@ -23,7 +23,7 @@ var fixtures = require('haraka-test-fixtures');
 * transaction
 * util_hmailitem
 
-These fixtures are rough analogs of their like-named siblings in Haraka with varying levels of completeness. If there are functions necessary to enhance your ability to test, please do add them here.
+These fixtures are analogs of their like-named siblings in Haraka with varying levels of completeness. If there are functions necessary to enhance your ability to test, please do add them.
 
 
 [ci-img]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml/badge.svg
