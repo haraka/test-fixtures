@@ -1,4 +1,17 @@
+# Changelog
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/).
+
 ### Unreleased
+
+
+### [1.3.4] - 2024-04-05
+
+- populate [files] in package.json
+- plugin: fix comment typo
+- doc(README): verbiage improvements
+- dep(address-rfc2821): bump from 2.1.1 to 2.1.2 (#61)
+- deps: bump to latest
 
 
 ### [1.3.3] - 2023-12-12
@@ -199,3 +212,4 @@
 [1.3.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.1
 [1.3.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.2
 [1.3.3]: https://github.com/haraka/test-fixtures/releases/tag/1.3.3
+[1.3.4]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.4

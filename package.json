@@ -3,35 +3,34 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "repository": {
     "type": "git",
     "url": "git@github.com:haraka/test-fixtures.git"
   },
   "main": "index.js",
+  "files": [ "CHANGELOG.md", "lib", "config" ],
   "engines": {
     "node": ">=12"
   },
   "dependencies": {
-    "address-rfc2821": "2.1.2",
+    "address-rfc2821": "^2.1.2",
     "haraka-config": "^1.1.0",
-    "haraka-constants": "1.0.6",
-    "haraka-email-message": "~1.2.0",
-    "haraka-notes": "1.0.6",
+    "haraka-constants": "^1.0.6",
+    "haraka-email-message": "^1.2.1",
+    "haraka-notes": "^1.0.6",
     "haraka-results": "^2.2.3"
   },
   "devDependencies": {
-    "eslint": "^8.55.0",
-    "eslint-plugin-haraka": "*",
-    "mocha": "^10.2.0"
+    "eslint-plugin-haraka": "1.0.15"
   },
   "bugs": {
     "url": "https://github.com/haraka/test-fixtures/issues"
   },
   "scripts": {
-    "test": "npx mocha",
-    "lint": "npx eslint index.js lib test",
-    "lintfix": "npx eslint --fix index.js lib test",
+    "test": "npx mocha@^10",
+    "lint": "npx eslint@^8 index.js lib test",
+    "lintfix": "npx eslint@^8 --fix index.js lib test",
     "versions": "npx dependency-version-checker check"
   }
 }
