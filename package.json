@@ -26,7 +26,7 @@
     "haraka-results": "^2.2.3"
   },
   "devDependencies": {
-    "@haraka/eslint-config": "^1.1.2",
+    "@haraka/eslint-config": "^1.1.2"
   },
   "bugs": {
     "url": "https://github.com/haraka/test-fixtures/issues"
