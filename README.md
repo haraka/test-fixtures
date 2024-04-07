@@ -14,17 +14,16 @@ Fixtures for testing Haraka and plugins
 
 # Exports the following fixture types:
 
-* connection
-* line_socket
-* logger
-* plugin
-* [results](https://github.com/haraka/haraka-results)
-* stub
-* transaction
-* util_hmailitem
+- connection
+- line_socket
+- logger
+- plugin
+- [results](https://github.com/haraka/haraka-results)
+- stub
+- transaction
+- util_hmailitem
 
 These fixtures are analogs of their like-named siblings in Haraka with varying levels of completeness. If there are functions necessary to enhance your ability to test, please do add them.
-
 
 [ci-img]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml
