@@ -4,6 +4,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.3.5] - 2024-04-07
+
+- update package.json scripts
+- dep: eslint-plugin-haraka -> @haraka/eslint-config
+- update .eslintrc
+
 
 ### [1.3.4] - 2024-04-05
 
@@ -60,7 +66,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - ci: add submodule .release
 
 
-### 1.0.34 - 2022-05-23
+### [1.0.34] - 2022-05-23
 
 - dep(eslint): 6 -> 8
 - ci(node): add v18 testing
@@ -204,12 +210,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - better plugin path resolution
 
 
-[1.0.35]: https://github.com/haraka/haraka-test-fixtures/releases/tag/1.0.35
-[1.1.0]: https://github.com/haraka/haraka-test-fixtures/releases/tag/v1.1.0
+[1.0.34]: https://github.com/haraka/test-fixtures/releases/tag/1.0.34
+[1.0.35]: https://github.com/haraka/test-fixtures/releases/tag/1.0.35
+[1.1.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.1.0
 [1.2.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.2.0
 [1.2.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.2.1
 [1.3.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.0
 [1.3.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.1
 [1.3.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.2
-[1.3.3]: https://github.com/haraka/test-fixtures/releases/tag/1.3.3
+[1.3.3]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.3
 [1.3.4]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.4
+[1.3.5]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.5
