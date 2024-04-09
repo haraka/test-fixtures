@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.3.5",
+  "version": "1.3.6",
   "repository": {
     "type": "git",
     "url": "git@github.com:haraka/test-fixtures.git"
@@ -12,7 +12,8 @@
   "files": [
     "CHANGELOG.md",
     "lib",
-    "config"
+    "config",
+    "CONTRIBUTORS.md"
   ],
   "engines": {
     "node": ">=12"
