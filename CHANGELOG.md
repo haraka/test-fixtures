@@ -4,6 +4,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.3.6] - 2024-04-09
+
+- doc(CONTRIBUTING): added
+
 ### [1.3.5] - 2024-04-07
 
 - update package.json scripts
@@ -195,3 +199,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.3]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.3
 [1.3.4]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.4
 [1.3.5]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.5
+[1.3.6]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.6
