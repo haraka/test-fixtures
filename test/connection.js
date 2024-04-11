@@ -4,13 +4,12 @@ const connection = require('../lib/connection')
 // console.log(connection);
 
 describe('basic', function () {
-  it('is a function', (done) => {
+  it('is a function', () => {
     assert.equal(typeof connection.Connection, 'function')
-    done()
   })
-  it('createConnection', (done) => {
+
+  it('createConnection', () => {
     assert.equal(typeof connection.createConnection, 'function')
-    done()
   })
 })
 
@@ -19,38 +18,64 @@ describe('connection', function () {
     this.connection = connection.createConnection()
     done()
   })
-  it('creates a new connection', (done) => {
+
+  it('creates a new connection', () => {
     assert.ok(this.connection)
-    done()
   })
-  it('creates a new transaction', (done) => {
+
+  it('creates a new transaction', () => {
     this.connection.init_transaction()
     assert.ok(this.connection.transaction)
-    done()
   })
-  it('remote.ip', (done) => {
-    assert.equal(this.connection.remote.ip, '127.0.0.1')
-    done()
+
+  it('remote', () => {
+    assert.deepEqual(this.connection.remote, {
+      ip: '127.0.0.1',
+      port: null,
+      closed: false,
+      host: null,
+      info: null,
+      is_local: false,
+      is_private: false,
+    })
   })
-  it('local', (done) => {
-    assert.deepEqual(this.connection.local, {})
-    done()
+
+  it('local', () => {
+    assert.deepEqual(this.connection.local, {
+      host: 'haraka-test.example.com',
+      info: 'Haraka',
+      ip: null,
+      port: null,
+    })
   })
-  it('hello', (done) => {
-    assert.deepEqual(this.connection.hello, {})
-    done()
+
+  it('hello', () => {
+    assert.deepEqual(this.connection.hello, {
+      host: null,
+      verb: null,
+    })
   })
-  it('tls', (done) => {
-    assert.deepEqual(this.connection.tls, {})
-    done()
+
+  it('tls', () => {
+    assert.deepEqual(this.connection.tls, {
+      advertised: false,
+      cipher: {},
+      enabled: false,
+      verified: false,
+    })
   })
-  it('notes', (done) => {
+
+  it('notes', () => {
     assert.deepEqual(this.connection.notes, {})
-    done()
   })
-  it('set', (done) => {
+
+  it('set', () => {
     this.connection.set('remote', 'ip', '192.168.1.1')
     assert.deepEqual(this.connection.remote.ip, '192.168.1.1')
-    done()
+  })
+
+  it('get', () => {
+    this.connection.set('remote', 'ip', '192.168.1.1')
+    assert.equal(this.connection.get('remote.ip'), '192.168.1.1')
   })
 })

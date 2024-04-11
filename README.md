@@ -8,11 +8,30 @@
 
 Fixtures for testing Haraka and plugins
 
-# Usage
+## Usage
 
-`const fixtures = require('haraka-test-fixtures');`
+```js
+const fixtures = require('haraka-test-fixtures')
+```
 
-# Exports the following fixture types:
+### A common pattern
+
+```js
+beforeEach(() => {
+  this.plugin = new fixtures.plugin('pluginName')
+
+  this.connection = fixtures.connection.createConnection()
+  this.connection.init_transaction()
+})
+
+describe('pluginName', () => {
+  it('registers', () => {
+    this.plugin.register()
+  })
+})
+```
+
+## Exports the following fixture types:
 
 - connection
 - line_socket
