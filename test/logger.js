@@ -4,23 +4,19 @@ const logger = require('../lib/logger')
 
 const plugin = { name: 'mock_plugin' }
 
-// console.log(logger);
 describe('logger', function () {
-  it('exports logging functions', (done) => {
+  it('exports logging functions', () => {
     assert.equal(typeof logger.loginfo, 'function')
     assert.equal(typeof logger.logwarn, 'function')
     assert.equal(typeof logger.logerror, 'function')
     assert.equal(typeof logger.log, 'function')
-    done()
   })
 
-  it('log', (done) => {
+  it('log', () => {
     assert.ok(logger.log('info', '_test log()_'))
-    done()
   })
 
-  it('loginfo', (done) => {
+  it('loginfo', () => {
     assert.ok(logger.loginfo(plugin, '_test loginfo()_'))
-    done()
   })
 })

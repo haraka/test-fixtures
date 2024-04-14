@@ -4,9 +4,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
-### [1.3.6] - 2024-04-09
+### [1.3.6] - 2024-04-14
 
+- transaction: sync with haraka/Haraka
+- connection: import more from haraka/Haraka/connection
+- test(conn): expect more connection properties
 - doc(CONTRIBUTING): added
+- doc(README): added example setup
 
 ### [1.3.5] - 2024-04-07
 
