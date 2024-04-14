@@ -4,13 +4,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
-### [1.3.6] - 2024-04-14
+### [1.3.7] - 2024-04-14
 
 - transaction: sync with haraka/Haraka
 - connection: import more from haraka/Haraka/connection
 - test(conn): expect more connection properties
-- doc(CONTRIBUTING): added
 - doc(README): added example setup
+
+### [1.3.6] - 2024-04-09
+
+- doc(CONTRIBUTING): added
 
 ### [1.3.5] - 2024-04-07
 
@@ -204,3 +207,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.4]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.4
 [1.3.5]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.5
 [1.3.6]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.6
+[1.3.7]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.7
