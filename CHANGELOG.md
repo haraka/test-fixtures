@@ -4,6 +4,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.3.8] - 2024-09-27
+
+- bumped dep versions:
+  - haraka-config: 1.4.0
+  - haraka-constants: 1.0.7
+  - haraka-email-message: 1.2.4
+  - haraka-notes: 1.1.0
+  - haraka-results: 2.2.4
+  - haraka-utils: 1.1.3
+  - @haraka/eslint-config: 1.1.5
+
 ### [1.3.7] - 2024-04-14
 
 - transaction: sync with haraka/Haraka
@@ -208,3 +219,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.5]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.5
 [1.3.6]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.6
 [1.3.7]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.7
+[1.3.8]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.8
