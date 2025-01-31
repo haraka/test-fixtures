@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.3.9] - 2025-01-31
 
+- vm_harness: access local files in plugin directory #68
 - dep(all): bump versions
 - dep(eslint): upgrade to v9
 
