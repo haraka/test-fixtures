@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.3.8",
+  "version": "1.3.9",
   "repository": {
     "type": "git",
     "url": "git@github.com:haraka/test-fixtures.git"
@@ -18,28 +18,32 @@
     "node": ">=12"
   },
   "dependencies": {
-    "address-rfc2821": "^2.1.2",
-    "haraka-config": "^1.4.0",
+    "address-rfc2821": "^2.1.3",
+    "haraka-config": "^1.4.2",
     "haraka-constants": "^1.0.7",
-    "haraka-email-message": "^1.2.4",
-    "haraka-notes": "^1.1.0",
-    "haraka-results": "^2.2.4",
+    "haraka-email-message": "^1.2.5",
+    "haraka-notes": "^1.1.1",
+    "haraka-results": "^2.2.5",
     "haraka-utils": "^1.1.3"
   },
   "devDependencies": {
-    "@haraka/eslint-config": "^1.1.5"
+    "@haraka/eslint-config": "^2.0.2"
   },
   "bugs": {
     "url": "https://github.com/haraka/test-fixtures/issues"
   },
   "scripts": {
     "format": "npm run prettier:fix && npm run lint:fix",
-    "lint": "npx eslint@^8 *.js lib test",
-    "lint:fix": "npx eslint@^8 *.js lib test --fix",
+    "lint": "npx eslint@^9 *.js lib test",
+    "lint:fix": "npx eslint@^9 *.js lib test --fix",
     "prettier": "npx prettier . --check",
     "prettier:fix": "npx prettier . --write --log-level=warn",
-    "test": "npx mocha@^10",
+    "test": "npx mocha@^11",
     "versions": "npx dependency-version-checker check",
     "versions:fix": "npx dependency-version-checker update"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
   }
 }
