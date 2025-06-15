@@ -4,6 +4,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.3.10] - 2025-06-15
+
+- dep(all): bump versions
+- logger: only check for PROTOCOL once (#71)
+
 ### [1.3.9] - 2025-01-31
 
 - vm_harness: access local files in plugin directory #68
@@ -227,3 +232,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.7]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.7
 [1.3.8]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.8
 [1.3.9]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.9
+[1.3.10]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.10
