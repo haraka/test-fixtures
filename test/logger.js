@@ -17,6 +17,9 @@ describe('logger', function () {
   })
 
   it('loginfo', () => {
+    const prev_loglevel = logger.loglevel
+    logger.loglevel = logger.levels.INFO
     assert.ok(logger.loginfo(plugin, '_test loginfo()_'))
+    logger.loglevel = prev_loglevel
   })
 })

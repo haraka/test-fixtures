@@ -66,7 +66,7 @@ describe('connection', function () {
   })
 
   it('notes', () => {
-    assert.deepEqual(this.connection.notes, {})
+    assert.deepEqual(this.connection.notes, { tls: {} })
   })
 
   it('set', () => {
