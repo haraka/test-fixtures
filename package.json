@@ -24,7 +24,8 @@
     "haraka-email-message": "^1.2.5",
     "haraka-notes": "^1.1.1",
     "haraka-results": "^2.2.6",
-    "haraka-utils": "^1.1.4"
+    "haraka-utils": "^1.1.4",
+    "ipaddr.js": "~2.3.0"
   },
   "devDependencies": {
     "@haraka/eslint-config": "^2.0.2"
