@@ -4,6 +4,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+- conn: add ipaddr dep, used in setupClient
+
 ### [1.3.10] - 2025-06-15
 
 - dep(all): bump versions
