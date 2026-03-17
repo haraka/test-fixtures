@@ -9,7 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
   - pause, resume, process_data|line, disconnect
 - line_socket: added event emitters
 - deps: bump all versions to latest
-- test: add coverage to _get_plugin_path
+- test: add coverage to \_get_plugin_path
 
 ### [1.3.10] - 2025-06-15
 

@@ -15,9 +15,7 @@ describe('plugin', function () {
   })
 
   it('creates a new Plugin from dir', () => {
-    const newPlugin = new Plugin(
-      path.join('test', 'fixtures', 'mock-plugin-dir'),
-    )
+    const newPlugin = new Plugin(path.join('test', 'fixtures', 'mock-plugin-dir'))
     assert.ok(newPlugin)
   })
 
@@ -58,24 +56,18 @@ describe('plugin', function () {
     })
 
     it('returns a path for a .js plugin', () => {
-      const result = plugin._get_plugin_path(
-        path.join('test', 'fixtures', 'mock-plugin'),
-      )
+      const result = plugin._get_plugin_path(path.join('test', 'fixtures', 'mock-plugin'))
       assert.ok(result)
       assert.ok(result.endsWith('.js'))
     })
 
     it('returns an absolute path', () => {
-      const result = plugin._get_plugin_path(
-        path.join('test', 'fixtures', 'mock-plugin'),
-      )
+      const result = plugin._get_plugin_path(path.join('test', 'fixtures', 'mock-plugin'))
       assert.ok(path.isAbsolute(result))
     })
 
     it('returns a path ending in package.json for a dir plugin', () => {
-      const result = plugin._get_plugin_path(
-        path.join('test', 'fixtures', 'mock-plugin-dir'),
-      )
+      const result = plugin._get_plugin_path(path.join('test', 'fixtures', 'mock-plugin-dir'))
       assert.ok(result)
       assert.ok(result.endsWith('package.json'))
     })
