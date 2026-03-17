@@ -26,7 +26,7 @@ describe('test-fixtures', function () {
 
   it('plugin', () => {
     const p = new fixtures.plugin(path.join('test', 'fixtures', 'mock-plugin'))
-    assert.equal('function', typeof p.load_plugin)
+    assert.equal('function', typeof p._compile)
   })
 
   it('result_store', () => {

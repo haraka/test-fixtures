@@ -65,10 +65,7 @@ describe('transaction', function () {
     it('get_decoded', (done) => {
       this.txn.header.add('From', 'Some Body <body@example.com>')
       assert.ok(this.txn)
-      assert.equal(
-        this.txn.header.get_decoded('From'),
-        'Some Body <body@example.com>',
-      )
+      assert.equal(this.txn.header.get_decoded('From'), 'Some Body <body@example.com>')
       done()
     })
   })

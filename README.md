@@ -1,6 +1,6 @@
 [![Build Status][ci-img]][ci-url]
-[![Code Coverage][cov-img]][cov-url]
-[![Code Climate][clim-img]][clim-url]
+[![CodeCov][cov-img]][cov-url]
+[![Qlty][qlty-img]][qlty-url]
 
 # haraka-test-fixtures
 
@@ -44,7 +44,7 @@ These fixtures are analogs of their like-named siblings in Haraka with varying l
 
 [ci-img]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml/badge.svg
 [ci-url]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml
-[cov-img]: https://codecov.io/github/haraka/test-fixtures/coverage.svg
+[cov-img]: https://codecov.io/github/haraka/test-fixtures/graph/badge.svg?token=YmOC83OqCH
 [cov-url]: https://codecov.io/github/haraka/test-fixtures
-[clim-img]: https://codeclimate.com/github/haraka/test-fixtures/badges/gpa.svg
-[clim-url]: https://codeclimate.com/github/haraka/test-fixtures
+[qlty-img]: https://qlty.sh/gh/haraka/projects/haraka-test-fixtures/maintainability.svg
+[qlty-url]: https://qlty.sh/gh/haraka/projects/haraka-test-fixtures
