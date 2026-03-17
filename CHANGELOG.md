@@ -4,12 +4,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
-- conn: add ipaddr dep, used in setupClient
-- connection: imported more SMTP state machine functions
+### [1.4.0] - 2026-03-17
+
+- plugin: imported more plugin functions
+- plugin: sync closer to Haraka/plugin.js
+  - added more fns, run code in current context
+- conn: add ipaddr dep, used in setupClient (#74)
+- test: remove done callbacks in synchronous tests (#73)
+- test: add coverage to get_plugin_path
+- conn: imported more SMTP state machine functions
   - pause, resume, process_data|line, disconnect
-- line_socket: added event emitters
+  - conn: add ipaddr dep, used in setupClient
+- line_socket: added event emitters, still needs TLS
+- logger: synced closer to Haraka/logger
 - deps: bump all versions to latest
-- test: add coverage to \_get_plugin_path
 
 ### [1.3.10] - 2025-06-15
 
@@ -240,3 +248,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.8]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.8
 [1.3.9]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.9
 [1.3.10]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.10
+[1.4.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.0
+[]: https://github.com/haraka/test-fixtures/releases/tag/v
