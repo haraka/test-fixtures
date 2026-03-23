@@ -254,4 +254,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.10]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.10
 [1.4.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.0
 [1.4.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.1
+
 []: https://github.com/haraka/test-fixtures/releases/tag/v
