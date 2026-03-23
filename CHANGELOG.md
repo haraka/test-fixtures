@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 - fix(plugin): use correct config in setup #76
 - chore(plugin): refactor || into for loop
+- break: delete vm_harness (no longer used)
+- style: add some node: prefixes
 
 ### [1.4.0] - 2026-03-17
 
