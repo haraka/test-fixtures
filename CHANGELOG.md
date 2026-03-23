@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.4.1] - 2026-03-23
 
-- fix(plugin): use correct config in setup
+- fix(plugin): use correct config in setup #76
 - chore(plugin): refactor || into for loop
 
 ### [1.4.0] - 2026-03-17
@@ -14,8 +14,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - plugin: imported more plugin functions
 - plugin: sync closer to Haraka/plugin.js
   - added more fns, run code in current context
-- conn: add ipaddr dep, used in setupClient (#74)
-- test: remove done callbacks in synchronous tests (#73)
+- conn: add ipaddr dep, used in setupClient #74
+- test: remove done callbacks in synchronous tests #73
 - test: add coverage to get_plugin_path
 - conn: imported more SMTP state machine functions
   - pause, resume, process_data|line, disconnect
@@ -27,7 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### [1.3.10] - 2025-06-15
 
 - dep(all): bump versions
-- logger: only check for PROTOCOL once (#71)
+- logger: only check for PROTOCOL once #71
 
 ### [1.3.9] - 2025-01-31
 
@@ -68,7 +68,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - populate [files] in package.json
 - plugin: fix comment typo
 - doc(README): verbiage improvements
-- dep(address-rfc2821): bump from 2.1.1 to 2.1.2 (#61)
+- dep(address-rfc2821): bump from 2.1.1 to 2.1.2 #61
 - deps: bump to latest
 
 ### [1.3.3] - 2023-12-12
@@ -81,7 +81,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.3.1] - 2023-12-03
 
-- transaction: update Buffer syntax (sync with Haraka) (#56)
+- transaction: update Buffer syntax (sync with Haraka) #56
 
 ### [1.3.0] - 2023-06-08
 
