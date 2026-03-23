@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "repository": {
     "type": "git",
     "url": "git@github.com:haraka/test-fixtures.git"
@@ -28,7 +28,7 @@
     "ipaddr.js": "~2.3.0"
   },
   "devDependencies": {
-    "@haraka/eslint-config": "^2.0.2"
+    "@haraka/eslint-config": "^2.0.4"
   },
   "bugs": {
     "url": "https://github.com/haraka/test-fixtures/issues"
@@ -40,8 +40,9 @@
     "prettier": "npx prettier . --check",
     "prettier:fix": "npx prettier . --write --log-level=warn",
     "test": "npx mocha",
-    "versions": "npx dependency-version-checker check",
-    "versions:fix": "npx dependency-version-checker update"
+    "versions": "npx npm-dep-mgr check",
+    "versions:fix": "npx npm-dep-mgr update",
+    "test:coverage": "npx c8 --reporter=text --reporter=text-summary npm test"
   },
   "prettier": {
     "printWidth": 120,
