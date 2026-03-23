@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### [1.4.1] - 2026-03-23
 
 - fix(plugin): use correct config in setup
+- chore(plugin): refactor || into for loop
 
 ### [1.4.0] - 2026-03-17
 
@@ -254,5 +255,3 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.10]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.10
 [1.4.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.0
 [1.4.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.1
-
-[]: https://github.com/haraka/test-fixtures/releases/tag/v
