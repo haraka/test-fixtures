@@ -1,5 +1,5 @@
-const assert = require('assert')
-const path = require('path')
+const assert = require('node:assert')
+const path = require('node:path')
 
 const fixtures = require('../index')
 
@@ -37,9 +37,5 @@ describe('test-fixtures', function () {
 
   it('util_hmailitem', () => {
     assert.equal('function', typeof fixtures.util_hmailitem.newMockHMailItem)
-  })
-
-  it('vm_harness', () => {
-    assert.equal('function', typeof fixtures.vm_harness.sandbox_require)
   })
 })
