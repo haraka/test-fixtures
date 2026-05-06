@@ -4,6 +4,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.4.2] - 2026-05-06
+
+#### Changed
+
+- v1.4.2
+
+
 ### [1.4.1] - 2026-03-23
 
 - fix(plugin): use correct config in setup #76
@@ -257,3 +264,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.3.10]: https://github.com/haraka/test-fixtures/releases/tag/v1.3.10
 [1.4.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.0
 [1.4.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.1
+[1.4.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.2
