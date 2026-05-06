@@ -6,10 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.4.2] - 2026-05-06
 
-#### Changed
-
-- v1.4.2
-
+- ci: tighten up GHA workflow files permissions
+- deps: bump versions
 
 ### [1.4.1] - 2026-03-23
 
