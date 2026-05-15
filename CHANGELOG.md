@@ -6,7 +6,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.5.0] - 2026-05-15
 
-
 - dep(address-rfc2821): upgraded to @haraka/email-message
 
 ### [1.4.3] - 2026-05-10
