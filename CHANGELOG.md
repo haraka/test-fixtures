@@ -7,7 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### [1.6.0] - 2026-05-17
 
 - feat(dns): add configurable DNS server fixture (`fixtures.dns`)
-- change: test runner is now node:test
+- fix(connection): respond() no longer throws when called w/o a cb
+- test: test runner is now node:test
+- test: raise coverage of connection/logger/stub responders
 
 ### [1.5.1] - 2026-05-15
 

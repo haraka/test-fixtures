@@ -40,9 +40,10 @@
     "prettier": "npx prettier . --check",
     "prettier:fix": "npx prettier . --write --log-level=warn",
     "test": "node --test test/*.js",
+    "test:coverage": "node --test --experimental-test-coverage test/*.js",
+    "test:coverage:lcov": "npx c8 --reporter=text --reporter=text-summary npm test",
     "versions": "npx npm-dep-mgr check",
-    "versions:fix": "npx npm-dep-mgr update",
-    "test:coverage": "npx c8 --reporter=text --reporter=text-summary npm test"
+    "versions:fix": "npx npm-dep-mgr update"
   },
   "prettier": {
     "printWidth": 120,

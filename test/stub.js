@@ -21,4 +21,26 @@ describe('stub', () => {
     stub()
     assert.equal(stub.called, true)
   })
+
+  it('returns the configured return value', () => {
+    const stub = fixtures.stub('RET')
+    assert.equal(stub(), 'RET')
+  })
+
+  // Plugins use fixtures.stub as a `next` callback and inspect args
+  // across multiple invocations (e.g. next() called more than once).
+  it('accumulates args across calls', () => {
+    const stub = fixtures.stub()
+    stub('first')
+    assert.equal(stub.args[0], 'first') // single call: args = arguments
+
+    stub('second')
+    // second call: args becomes [arguments, arguments]
+    assert.equal(stub.args[0][0], 'first')
+    assert.equal(stub.args[1][0], 'second')
+
+    stub('third')
+    // third+ call: pushed onto the array
+    assert.equal(stub.args[2][0], 'third')
+  })
 })
