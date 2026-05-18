@@ -4,6 +4,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.6.0] - 2026-05-17
+
+- feat(dns): add configurable DNS server fixture (`fixtures.dns`)
+- fix(connection): respond() no longer throws when called w/o a cb
+- test: test runner is now node:test
+- test: raise coverage of connection/logger/stub responders
+
 ### [1.5.1] - 2026-05-15
 
 - fix(plugin): treat unresolved core plugin as noop
@@ -278,3 +285,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.4.3]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.3
 [1.5.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.5.0
 [1.5.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.5.1
+[1.6.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.0
