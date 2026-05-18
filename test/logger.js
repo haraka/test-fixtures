@@ -1,10 +1,11 @@
-const assert = require('assert')
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
 const logger = require('../lib/logger')
 
 const plugin = { name: 'mock_plugin' }
 
-describe('logger', function () {
+describe('logger', () => {
   it('exports logging functions', () => {
     assert.equal(typeof logger.loginfo, 'function')
     assert.equal(typeof logger.logwarn, 'function')

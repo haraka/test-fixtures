@@ -1,9 +1,10 @@
-const assert = require('node:assert')
+const assert = require('node:assert/strict')
 const path = require('node:path')
+const { describe, it } = require('node:test')
 
 const fixtures = require('../index')
 
-describe('test-fixtures', function () {
+describe('test-fixtures', () => {
   it('stub', () => {
     assert.equal('function', typeof fixtures.stub.stub)
   })

@@ -1,10 +1,11 @@
 'use strict'
 
-const assert = require('assert')
+const assert = require('node:assert/strict')
+const { describe, it } = require('node:test')
 
 const fixtures = require('../lib/stub')
 
-describe('stub', function () {
+describe('stub', () => {
   it('is a function', () => {
     assert.equal(typeof fixtures.stub, 'function')
   })

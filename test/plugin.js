@@ -1,10 +1,10 @@
-const assert = require('assert')
-
-const path = require('path')
+const assert = require('node:assert/strict')
+const path = require('node:path')
+const { describe, it, beforeEach } = require('node:test')
 
 const Plugin = require('../lib/plugin')
 
-describe('plugin', function () {
+describe('plugin', () => {
   it('exports a Plugin function', () => {
     assert.equal(typeof Plugin, 'function')
   })
@@ -19,17 +19,19 @@ describe('plugin', function () {
     assert.ok(newPlugin)
   })
 
-  describe('register', function () {
+  describe('register', () => {
+    let plugin
+
     beforeEach(() => {
-      this.plugin = new Plugin(path.join('test', 'fixtures', 'mock-plugin-dir'))
+      plugin = new Plugin(path.join('test', 'fixtures', 'mock-plugin-dir'))
     })
 
     it('register exists', () => {
-      assert.equal(typeof this.plugin.register, 'function')
+      assert.equal(typeof plugin.register, 'function')
     })
 
     it('register runs', () => {
-      this.plugin.register()
+      plugin.register()
       assert.ok(true) // register() didn't throw
     })
 
@@ -48,7 +50,7 @@ describe('plugin', function () {
     })
   })
 
-  describe('_get_plugin_path', function () {
+  describe('_get_plugin_path', () => {
     let plugin
 
     beforeEach(() => {
@@ -89,7 +91,7 @@ describe('plugin', function () {
     })
   })
 
-  describe('_get_code', function () {
+  describe('_get_code', () => {
     it('loads package plugins via directory require shim', () => {
       const pi = new Plugin(path.join('test', 'fixtures', 'mock-plugin-dir'))
       const code = pi._get_code(pi.plugin_path)

@@ -6,12 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.6.0] - 2026-05-17
 
-#### Added
-
-- add test dns server
-
-
 - feat(dns): add configurable DNS server fixture (`fixtures.dns`)
+- change: test runner is now node:test
 
 ### [1.5.1] - 2026-05-15
 

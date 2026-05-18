@@ -1,9 +1,11 @@
-const assert = require('assert')
+'use strict'
+
+const assert = require('node:assert/strict')
+const { describe, it, beforeEach } = require('node:test')
 
 const connection = require('../lib/connection')
-// console.log(connection);
 
-describe('basic', function () {
+describe('basic', () => {
   it('is a function', () => {
     assert.equal(typeof connection.Connection, 'function')
   })
@@ -13,23 +15,24 @@ describe('basic', function () {
   })
 })
 
-describe('connection', function () {
-  beforeEach((done) => {
-    this.connection = connection.createConnection()
-    done()
+describe('connection', () => {
+  let conn
+
+  beforeEach(() => {
+    conn = connection.createConnection()
   })
 
   it('creates a new connection', () => {
-    assert.ok(this.connection)
+    assert.ok(conn)
   })
 
   it('creates a new transaction', () => {
-    this.connection.init_transaction()
-    assert.ok(this.connection.transaction)
+    conn.init_transaction()
+    assert.ok(conn.transaction)
   })
 
   it('remote', () => {
-    assert.deepEqual(this.connection.remote, {
+    assert.deepEqual(conn.remote, {
       ip: '127.0.0.1',
       port: null,
       closed: false,
@@ -41,7 +44,7 @@ describe('connection', function () {
   })
 
   it('local', () => {
-    assert.deepEqual(this.connection.local, {
+    assert.deepEqual(conn.local, {
       host: 'haraka-test.example.com',
       info: 'Haraka',
       ip: null,
@@ -50,14 +53,14 @@ describe('connection', function () {
   })
 
   it('hello', () => {
-    assert.deepEqual(this.connection.hello, {
+    assert.deepEqual(conn.hello, {
       host: null,
       verb: null,
     })
   })
 
   it('tls', () => {
-    assert.deepEqual(this.connection.tls, {
+    assert.deepEqual(conn.tls, {
       advertised: false,
       cipher: {},
       enabled: false,
@@ -66,16 +69,17 @@ describe('connection', function () {
   })
 
   it('notes', () => {
-    assert.deepEqual(this.connection.notes, { tls: {} })
+    // conn.notes is a Notes instance; compare its own enumerable props
+    assert.deepEqual({ ...conn.notes }, { tls: {} })
   })
 
   it('set', () => {
-    this.connection.set('remote', 'ip', '192.168.1.1')
-    assert.deepEqual(this.connection.remote.ip, '192.168.1.1')
+    conn.set('remote', 'ip', '192.168.1.1')
+    assert.deepEqual(conn.remote.ip, '192.168.1.1')
   })
 
   it('get', () => {
-    this.connection.set('remote', 'ip', '192.168.1.1')
-    assert.equal(this.connection.get('remote.ip'), '192.168.1.1')
+    conn.set('remote', 'ip', '192.168.1.1')
+    assert.equal(conn.get('remote.ip'), '192.168.1.1')
   })
 })
