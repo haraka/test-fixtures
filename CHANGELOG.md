@@ -4,6 +4,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.6.0] - 2026-05-17
+
+#### Added
+
+- add test dns server
+
+
 - feat(dns): add configurable DNS server fixture (`fixtures.dns`)
 
 ### [1.5.1] - 2026-05-15
@@ -280,3 +287,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.4.3]: https://github.com/haraka/test-fixtures/releases/tag/v1.4.3
 [1.5.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.5.0
 [1.5.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.5.1
+[1.6.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.0
