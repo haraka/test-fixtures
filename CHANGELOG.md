@@ -4,6 +4,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+- feat(dns): add configurable DNS server fixture (`fixtures.dns`)
+
 ### [1.5.1] - 2026-05-15
 
 - fix(plugin): treat unresolved core plugin as noop

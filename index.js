@@ -2,6 +2,7 @@ exports.results = require('haraka-results')
 exports.result_store = exports.results
 
 exports.connection = require('./lib/connection')
+exports.dns = require('./lib/dns')
 exports.line_socket = require('./lib/line_socket')
 exports.logger = require('./lib/logger')
 exports.plugin = require('./lib/plugin')
