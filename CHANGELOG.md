@@ -4,6 +4,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+- doc(README): update example to use node:test imports and scoped let
+- fix(connection): return → continue in setTLS() loop
+- fix(connection): guarded server.address() with typeof + fallback
+- fix(plugin): removed redundant \_compile()
+- fix(plugin): `"use strict";\n` so trailing // comments in plugin files can't swallow the rest
+- fix(plugin): escape " in packageDir before interpolation (after the Windows backslash escape)
+
 ### [1.6.0] - 2026-05-17
 
 - feat(dns): add configurable DNS server fixture (`fixtures.dns`)
