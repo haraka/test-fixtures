@@ -24,7 +24,7 @@
     "haraka-email-message": "^1.3.3",
     "haraka-notes": "^1.1.1",
     "haraka-results": "^2.3.0",
-    "haraka-utils": "^1.1.4",
+    "haraka-utils": "^2.0.0",
     "ipaddr.js": "~2.4.0"
   },
   "devDependencies": {
