@@ -15,16 +15,20 @@ const fixtures = require('haraka-test-fixtures')
 ### A common pattern
 
 ```js
-beforeEach(() => {
-  this.plugin = new fixtures.plugin('pluginName')
-
-  this.connection = fixtures.connection.createConnection()
-  this.connection.init_transaction()
-})
+const { beforeEach, describe, it } = require('node:test')
 
 describe('pluginName', () => {
+  let plugin
+  let connection
+
+  beforeEach(() => {
+    plugin = new fixtures.plugin('pluginName')
+    connection = fixtures.connection.createConnection()
+    connection.init_transaction()
+  })
+
   it('registers', () => {
-    this.plugin.register()
+    plugin.register()
   })
 })
 ```
