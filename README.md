@@ -1,6 +1,5 @@
 [![Build Status][ci-img]][ci-url]
 [![CodeCov][cov-img]][cov-url]
-[![Code Climate][clim-img]][clim-url]
 [![Qlty][qlty-img]][qlty-url]
 
 # haraka-test-fixtures
@@ -84,7 +83,5 @@ await dns.close()
 [ci-url]: https://github.com/haraka/test-fixtures/actions/workflows/ci.yml
 [cov-img]: https://codecov.io/github/haraka/test-fixtures/graph/badge.svg?token=YmOC83OqCH
 [cov-url]: https://codecov.io/github/haraka/test-fixtures
-[clim-img]: https://qlty.sh/gh/haraka/projects/test-fixtures/maintainability.svg
-[clim-url]: https://qlty.sh/gh/haraka/projects/test-fixtures
 [qlty-img]: https://qlty.sh/gh/haraka/projects/haraka-test-fixtures/maintainability.svg
 [qlty-url]: https://qlty.sh/gh/haraka/projects/haraka-test-fixtures
