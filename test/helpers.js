@@ -72,6 +72,14 @@ describe('makeConnection', () => {
     assert.equal(conn.relaying, true)
   })
 
+  it('routes relaying through the transaction when a transaction is created', () => {
+    // matches Connection.relaying setter semantics: when transaction exists,
+    // relaying is stored on the transaction (so reset_transaction clears it)
+    const conn = makeConnection({ relaying: true, withTxn: true })
+    assert.equal(conn.relaying, true)
+    assert.equal(conn.transaction._relaying, true)
+  })
+
   it('sets hello from opts.helo', () => {
     const conn = makeConnection({ helo: 'mail.example.com' })
     assert.equal(conn.hello.host, 'mail.example.com')
