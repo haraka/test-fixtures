@@ -4,6 +4,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.6.2] - 2026-05-28
+
+
 ### [1.6.1] - 2026-05-28
 
 - doc(README): update example to use node:test imports and scoped let
@@ -297,3 +300,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.5.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.5.1
 [1.6.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.0
 [1.6.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.1
+[1.6.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.2
