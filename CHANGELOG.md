@@ -6,6 +6,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.6.2] - 2026-05-28
 
+- fix(plugin): restored not-redundant \_compile()
 
 ### [1.6.1] - 2026-05-28
 
@@ -13,8 +14,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 - fix(connection): return → continue in setTLS() loop
 - fix(connection): guarded server.address() with typeof + fallback
 - fix(plugin): removed redundant \_compile()
-- fix(plugin): `"use strict";\n` so trailing // comments in plugin files can't swallow the rest
-- fix(plugin): escape " in packageDir before interpolation (after the Windows backslash escape)
+- fix(plugin): `"use strict";\n` so trailing // comments can't swallow the rest
+- fix(plugin): escape " in packageDir before interpolation
 - deps: bumped to latest
 
 ### [1.6.0] - 2026-05-17
