@@ -3,7 +3,7 @@
   "name": "haraka-test-fixtures",
   "license": "MIT",
   "description": "Haraka Test Fixtures",
-  "version": "1.6.2",
+  "version": "1.7.0",
   "repository": {
     "type": "git",
     "url": "git@github.com:haraka/test-fixtures.git"
@@ -34,6 +34,7 @@
     "url": "https://github.com/haraka/test-fixtures/issues"
   },
   "scripts": {
+    "prepare": "git rev-parse --git-dir >/dev/null 2>&1 && git config core.hooksPath .githooks || true",
     "format": "npm run prettier:fix && npm run lint:fix",
     "lint": "npx eslint *.js lib test",
     "lint:fix": "npx eslint *.js lib test --fix",
