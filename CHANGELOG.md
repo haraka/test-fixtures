@@ -5,7 +5,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 ### Unreleased
 
 ### [1.6.1] - 2026-05-28
-- a few little fixes (#84)
 
 - doc(README): update example to use node:test imports and scoped let
 - fix(connection): return → continue in setTLS() loop
