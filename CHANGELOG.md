@@ -4,14 +4,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.6.2] - 2026-05-28
+
+- fix(plugin): restored not-redundant \_compile()
+
 ### [1.6.1] - 2026-05-28
 
 - doc(README): update example to use node:test imports and scoped let
 - fix(connection): return → continue in setTLS() loop
 - fix(connection): guarded server.address() with typeof + fallback
 - fix(plugin): removed redundant \_compile()
-- fix(plugin): `"use strict";\n` so trailing // comments in plugin files can't swallow the rest
-- fix(plugin): escape " in packageDir before interpolation (after the Windows backslash escape)
+- fix(plugin): `"use strict";\n` so trailing // comments can't swallow the rest
+- fix(plugin): escape " in packageDir before interpolation
 - deps: bumped to latest
 
 ### [1.6.0] - 2026-05-17
@@ -297,3 +301,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.5.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.5.1
 [1.6.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.0
 [1.6.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.1
+[1.6.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.2
