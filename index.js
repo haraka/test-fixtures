@@ -14,7 +14,12 @@ exports.assertions = require('./lib/assertions')
 exports.line_socket = require('./lib/line_socket')
 exports.logger = require('./lib/logger')
 exports.plugin = require('./lib/plugin')
-exports.stub = require('./lib/stub')
+
+// Expose stub as both a callable (modern: `const { stub } = require(...)`)
+// and as a property (legacy: `fixtures.stub.stub()`, used widely in plugin tests).
+const stubMod = require('./lib/stub')
+exports.stub = stubMod.stub
+exports.stub.stub = stubMod.stub
 exports.transaction = require('./lib/transaction')
 exports.util_hmailitem = require('./lib/util_hmailitem')
 

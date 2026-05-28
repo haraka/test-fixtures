@@ -75,6 +75,27 @@ describe('typed hook helpers', () => {
     assert.equal(conn.notes.last_mail_from, 'user@example.com')
     assert.equal(r.rc, undefined)
   })
+
+  it('callMail treats a string 4th arg as a method override (skipping params)', async () => {
+    plugin.custom_mail = (next) => next(constants.deny, 'via override')
+    const r = await callMail(plugin, conn, 'sender@example.com', 'custom_mail')
+    assert.equal(r.rc, constants.deny)
+    assert.equal(r.msg, 'via override')
+  })
+
+  it('respects register_hook(hook, method) with a non-hook_ method name', async () => {
+    // The aliases plugin pattern: this.register_hook('rcpt', 'aliases')
+    plugin.aliases = (next, c, params) => {
+      c.notes.handled_by = 'aliases'
+      c.notes.rcpt_addr = params?.[0]?.address
+      next()
+    }
+    plugin.hooks.rcpt = ['aliases']
+    const r = await callRcpt(plugin, conn, 'user@example.com')
+    assert.equal(r.rc, undefined)
+    assert.equal(conn.notes.handled_by, 'aliases')
+    assert.equal(conn.notes.rcpt_addr, 'user@example.com')
+  })
 })
 
 describe('resolveMethod', () => {

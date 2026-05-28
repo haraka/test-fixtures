@@ -3,11 +3,18 @@
 const assert = require('node:assert/strict')
 const { describe, it } = require('node:test')
 
-const { stub } = require('../lib/stub')
+const { stub } = require('../index')
 
 describe('stub', () => {
   it('is a function', () => {
     assert.equal(typeof stub, 'function')
+  })
+
+  it('back-compat: fixtures.stub.stub still works', () => {
+    const fixtures = require('../index')
+    assert.equal(typeof fixtures.stub.stub, 'function')
+    const s = fixtures.stub.stub('back-compat')
+    assert.equal(s(), 'back-compat')
   })
 
   it('returns a function', () => {
