@@ -6,9 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### [1.7.1] - 2026-06-02
 
-- feat: makeConnection server option (second arg of createConnection)
+- feat: makeConnection server option (second arg)
 - feat: makeConnection host option (sets remote.host)
-- feat: makeConnection silent + stubLogs options (silence or record all log methods)
+- feat: makeConnection silent + stubLogs options
 
 ### [1.7.0] - 2026-05-28
 
