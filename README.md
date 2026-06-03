@@ -79,6 +79,10 @@ makePlugin('access', { configDir: __dirname }) // override plugin.config root
 | `rcptTo`   | —             | array of string \| Address; coerced and assigned to `transaction.rcpt_to`. Implies a transaction. |
 | `notes`    | —             | object merged into `connection.notes`                                                             |
 | `txNotes`  | —             | object merged into `transaction.notes`. Implies a transaction.                                    |
+| `server`   | `{}`          | becomes `connection.server`; use for `server.notes.*` injection (e.g. shared redis handle).       |
+| `host`     | —             | `remote.host` (rDNS hostname)                                                                     |
+| `silent`   | `false`       | replace every log method (`loginfo`, `logwarn`, etc.) with a no-op                                |
+| `stubLogs` | `false`       | replace every log method with a recording `stub()`; assert on `conn.loginfo.args` etc.            |
 
 ```js
 const conn = makeConnection({
