@@ -91,6 +91,36 @@ describe('makeConnection', () => {
     assert.equal(conn.hello.host, null)
   })
 
+  it('passes opts.server through to createConnection', () => {
+    const server = { notes: { redis: { ping: true } } }
+    const conn = makeConnection({ server })
+    assert.equal(conn.server, server)
+    assert.equal(conn.server.notes.redis.ping, true)
+  })
+
+  it('sets remote.host from opts.host', () => {
+    const conn = makeConnection({ host: 'mail.example.com' })
+    assert.equal(conn.remote.host, 'mail.example.com')
+  })
+
+  it('silent: true replaces every log method with a no-op', () => {
+    const conn = makeConnection({ silent: true })
+    conn.loginfo('test info')
+    conn.logerror('test error')
+    // no-op functions return undefined and don't have .called
+    assert.equal(conn.loginfo.called, undefined)
+  })
+
+  it('stubLogs: true replaces every log method with a recording stub', () => {
+    const conn = makeConnection({ stubLogs: true })
+    conn.loginfo('hello')
+    conn.logerror('boom', { extra: 1 })
+    assert.equal(conn.loginfo.called, true)
+    assert.deepEqual(conn.loginfo.args, ['hello'])
+    assert.equal(conn.logerror.callCount, 1)
+    assert.deepEqual(conn.logerror.args, ['boom', { extra: 1 }])
+  })
+
   it('seeds connection.notes', () => {
     const conn = makeConnection({ notes: { foo: 1 } })
     assert.equal(conn.notes.foo, 1)
