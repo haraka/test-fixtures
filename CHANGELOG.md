@@ -4,6 +4,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
 ### Unreleased
 
+### [1.7.2] - 2026-06-20
+
+- fix: strip `haraka-plugin-` prefix from `plugin.name`, matching Haraka
+- refactor: replace a few == with ===
+
 ### [1.7.1] - 2026-06-02
 
 - feat: makeConnection server option (second arg)
@@ -318,3 +323,4 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/).
 [1.6.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.6.2
 [1.7.0]: https://github.com/haraka/test-fixtures/releases/tag/v1.7.0
 [1.7.1]: https://github.com/haraka/test-fixtures/releases/tag/v1.7.1
+[1.7.2]: https://github.com/haraka/test-fixtures/releases/tag/v1.7.2
